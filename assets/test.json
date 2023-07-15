@@ -1,0 +1,266 @@
+{
+  "status":"ok",
+  "totalResults":66,
+  "articles": [
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "Barron's"
+      } ,
+      "author" : "Joe Woelfel, Emily Dattilo" ,
+      "title" : "Lucid, Carnival, PacWest, Wolfspeed, Pfizer, and More Stock Market Movers - Barron's" ,
+      "description" : "Lucid reaches a supply agreement with Aston Martin that will give Lucid a 3.7% stake in the British luxury car maker, Carnival posts a narrower-than-expected loss, and PacWest agrees to sell a $3.5 billion specialty finance loan portfolio." ,
+      "url" : "https://www.barrons.com/articles/stock-market-movers-ed92c6db" ,
+      "urlToImage" : "https://images.barrons.com/im-793336/social" ,
+      "publishedAt" : "2023-06-26T14:23:00Z" ,
+      "content" : "Stocks were rising slightly Monday as traders kept an eye on developments in Europe following a brief rebellion by mercenary troops in Russia.\r\n Lucid Group\r\n(ticker: LCID) was rising 13% after it re… [+2100 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "WYFF4 Greenville"
+      } ,
+      "author" : "Stephanie Moore" ,
+      "title" : "'World's Largest' Buc-ee's store opens in Sevierville, Tennessee - WYFF4 Greenville" ,
+      "description" : "The world's largest Buc-ee's is now open in Sevierville, Tennessee, which is only about 2.5 hours from the Upstate." ,
+      "url" : "https://www.wyff4.com/article/bucees-world-largest-tennessee/44343171" ,
+      "urlToImage" : "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/buc-ees-1639353715.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" ,
+      "publishedAt" : "2023-06-26T14:15:00Z" ,
+      "content" : "SEVIERVILLE, Tenn. —The world's largest Buc-ee's is now open in Sevierville, Tennessee, which is only about 2.5 hours from the Upstate. \r\nThe famous roadside chain, with a very loyal following, opene… [+2032 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : "cbs-news" ,
+        "name" : "CBS News"
+      } ,
+      "author" : null ,
+      "title" : "Drug in weight-loss injection Wegovy may soon come in pill form - CBS News" ,
+      "description" : "Drugmaker Novo Nordisk plans to ask the FDA to OK the weight-loss tablets later this year. Two new studies show significant success with them." ,
+      "url" : "https://www.cbsnews.com/news/wegovy-high-dose-pill-form-medication-popular-weight-loss-injection-near/" ,
+      "urlToImage" : "https://assets2.cbsnewsstatic.com/hub/i/r/2023/01/30/513dc797-978f-4844-9563-d4c2ec081c40/thumbnail/1200x630/3bf568a1a8e855e729c1479013f6005f/gettyimages-1312085296.jpg?v=74b410729cdff54299e4158e8919d920" ,
+      "publishedAt" : "2023-06-26T14:09:00Z" ,
+      "content" : "What if treating obesity could be as easy as popping an effective pill? \r\nThat's a notion that has long fueled hope for many of the more than 40% of Americans who are considered obese — and fueled cr… [+5750 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "As.com"
+      } ,
+      "author" : "Greg Heilman" ,
+      "title" : "US financial news live updates: Social Security checks, SNAP payments, inflation... - AS USA" ,
+      "description" : "Join us for the latest developments surrounding key data on the US economy, including inflation rates, unemployment figures, and changes in interest rates." ,
+      "url" : "https://en.as.com/latest_news/us-financial-news-live-updates-social-security-checks-snap-payments-inflation-n-2/" ,
+      "urlToImage" : "https://img.asmedia.epimg.net/resizer/7i7mocafBbj_Kz-5ECsPeqDtC9c=/1472x828/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/SMVNAPSLBHFCZ5VXUWRQON3ZPI.jpg" ,
+      "publishedAt" : "2023-06-26T13:45:20Z" ,
+      "content" : "Middle-class homebuyers face worst housing shortages\r\nMiddle-income homebuyers are hit hardest by the housing shortage.\r\nPer Yahoo Finance, while 51% of earners in the US make $75,000 or less, only 2… [+477 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "MarketWatch"
+      } ,
+      "author" : "Barbara Kollmeyer, William Watts, Steve Goldstein" ,
+      "title" : "Stock Market Today: Weak tone set to continue after Russian turmoil - MarketWatch" ,
+      "description" : "Follow all the action in U.S. markets on Monday." ,
+      "url" : "https://www.marketwatch.com/livecoverage/stock-market-today-weak-tone-set-to-continue-after-russian-turmoil/card/high-flying-greek-stocks-come-back-to-earth-after-election-nJKCJNnjD1h3wMtRY5sd" ,
+      "urlToImage" : "https://images.mktw.net/im-806801/social" ,
+      "publishedAt" : "2023-06-26T13:33:00Z" ,
+      "content" : "Back to TopIntraday Data provided by FACTSET and subject to terms of use. Historical and current end-of-day data provided by FACTSET. All quotes are in local exchange time. Real-time last sale data f… [+136 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "InsideEVs "
+      } ,
+      "author" : "Tom Moloughney" ,
+      "title" : "The $40,000 Chevrolet Silverado EV Is Officially Dead - InsideEVs " ,
+      "description" : "We examine the announcement that Chevrolet will not sell a base Silverado EV for $40,000, as they previously announced they would." ,
+      "url" : "https://insideevs.com/news/673683/chevrolet-40k-silverado-ev-dead/" ,
+      "urlToImage" : "https://cdn.motor1.com/images/mgl/ZnmE3z/s1/2024-chevrolet-silverado-ev-work-truck.jpg" ,
+      "publishedAt" : "2023-06-26T12:59:00Z" ,
+      "content" : "Chevrolet announced today that, unfortunately, it will not be offering an entry-level $40,000 Chevrolet Silverado EV after all.\r\nGranted, it's not a complete surprise because the entire electric vehi… [+3312 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "KOMO News"
+      } ,
+      "author" : "KOMO News Staff" ,
+      "title" : "Why the spring homebuying season fizzled out in Seattle, nationwide - KOMO News" ,
+      "description" : "The traditionally hot spring homebuying season seems to have been skipped this year, according to Seattle-based Redfin." ,
+      "url" : "https://komonews.com/news/local/seattle-housing-market-good-time-to-buy-sell-real-estate-listings-for-sale-pending-sold-agent-mortgage-interest-rates-inventory-washington-king-county-single-family-construction-new-build-demand-supply" ,
+      "urlToImage" : "https://komonews.com/resources/media/15af6515-c91c-40f3-8e29-aec06ac67f90-large16x9_GettyImages869051964.jpg?1686758640611" ,
+      "publishedAt" : "2023-06-26T12:33:50Z" ,
+      "content" : null
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "Investor's Business Daily"
+      } ,
+      "author" : "Investor's Business Daily" ,
+      "title" : "Tesla Downgraded By Goldman Sachs; Cathie Wood Sells $7 Million In TSLA Shares - Investor's Business Daily" ,
+      "description" : null ,
+      "url" : "https://www.investors.com/news/tesla-stock-downgraded-again-cathie-wood-sells-7-million-in-tsla-shares/" ,
+      "urlToImage" : null ,
+      "publishedAt" : "2023-06-26T12:23:00Z" ,
+      "content" : null
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "Investor's Business Daily"
+      } ,
+      "author" : "Investor's Business Daily" ,
+      "title" : "Dow Jones Futures Dip After Last Week's Losses; Tesla Stock Slides On Downgrade - Investor's Business Daily" ,
+      "description" : null ,
+      "url" : "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-stock-market-losses-tesla-stock-slides-on-downgrade/" ,
+      "urlToImage" : null ,
+      "publishedAt" : "2023-06-26T12:07:00Z" ,
+      "content" : null
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "KAKE"
+      } ,
+      "author" : null ,
+      "title" : "Spirit strike causes massive traffic backup - KAKE" ,
+      "description" : "The Sedgwick County Sheriff's Office asked people to avoid the area around Spirit AeroSystems." ,
+      "url" : "https://www.kake.com/story/49122350/spirit-strike-causes-massive-traffic-backup" ,
+      "urlToImage" : "https://KAKE.images.worldnow.com/images/24714046_G.jpg" ,
+      "publishedAt" : "2023-06-26T12:03:35Z" ,
+      "content" : "WICHITA, Kan. (KAKE) - The machinists strike at Spirit AeroSystems is creating a massive traffic backup around the company Monday morning. \r\nBackup could be seen near 31st and Oliver. That's one of t… [+761 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : "the-wall-street-journal" ,
+        "name" : "The Wall Street Journal"
+      } ,
+      "author" : "Craig Karmin" ,
+      "title" : "Two of New York's Most Famous Hotels Plan Their Postpandemic Comebacks - WSJ - The Wall Street Journal" ,
+      "description" : "Four Seasons could reopen soon under a potential deal, while the Plaza Hotel looks for a new manager" ,
+      "url" : "https://www.wsj.com/articles/two-of-new-yorks-most-famous-hotels-plan-their-postpandemic-comebacks-708cd943" ,
+      "urlToImage" : "https://images.wsj.net/im-806063/social" ,
+      "publishedAt" : "2023-06-26T12:00:00Z" ,
+      "content" : null
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "Pfizer.com"
+      } ,
+      "author" : "Pfizer" ,
+      "title" : "Pfizer Provides Update on GLP-1-RA Clinical Development Program for Adults with Obesity and Type 2 Diabetes Mellitus - Pfizer" ,
+      "description" : null ,
+      "url" : "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-provides-update-glp-1-ra-clinical-development" ,
+      "urlToImage" : null ,
+      "publishedAt" : "2023-06-26T11:58:10Z" ,
+      "content" : null
+    } ,
+    {
+      "source" : {
+        "id" : "techcrunch" ,
+        "name" : "TechCrunch"
+      } ,
+      "author" : "Ingrid Lunden" ,
+      "title" : "IBM acquires Apptio from Vista for $4.6B in cash to double down on hybrid cloud services - TechCrunch" ,
+      "description" : "As cloud architecture continues to more ubiquitous among organizations, increasingly what is more apparent is that many organizations are taking a hybrid approach, blending SaaS in private and public clouds with some products that remain on premises. Today, I…" ,
+      "url" : "https://techcrunch.com/2023/06/26/ibm-acquires-apptio-from-vista-for-4-6b-in-cash-to-double-down-on-hybrid-cloud-services/" ,
+      "urlToImage" : "https://techcrunch.com/wp-content/uploads/2023/04/GettyImages-1341075718.jpg?resize=1200,750" ,
+      "publishedAt" : "2023-06-26T11:46:29Z" ,
+      "content" : "As cloud architecture continues to more ubiquitous among organizations, increasingly what is more apparent is that many organizations are taking a hybrid approach, blending SaaS in private and public… [+4602 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : "the-washington-post" ,
+        "name" : "The Washington Post"
+      } ,
+      "author" : "Pranshu Verma, Will Oremus" ,
+      "title" : "Meta's new AI is being used to create sex chatbots - The Washington Post" ,
+      "description" : "From sex chats to cancer research, “open-source” models are challenging tech giants’ control over the AI revolution — to the promise or peril of society" ,
+      "url" : "https://www.washingtonpost.com/technology/2023/06/26/facebook-chatbot-sex/" ,
+      "urlToImage" : "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/QJZARMOWBVE6DGUKXM7TQGMZSI.jpg&w=1440" ,
+      "publishedAt" : "2023-06-26T11:44:06Z" ,
+      "content" : "Comment on this story\r\nComment\r\nAllie is an 18-year old with long brown hair who boasts tons of sexual experience. Because shelives for attention, shell share details of her escapadeswith anyone for … [+8463 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : "usa-today" ,
+        "name" : "USA Today"
+      } ,
+      "author" : ", USA TODAY" ,
+      "title" : "Power out: Map shows outages in Tennessee, Arkansas, Kentucky, Georgia - USA TODAY" ,
+      "description" : "Over 400,000 people were without power Monday after storms battered parts of the country Sunday. Here's a look at what states are affected." ,
+      "url" : "https://www.usatoday.com/story/news/nation/2023/06/26/us-power-outage-map/70355678007/" ,
+      "urlToImage" : "https://www.gannett-cdn.com/presto/2023/06/26/PIND/ed087937-3ec5-4827-ab51-9abdfc836764-greenwood_tornado_damage_JRW008.JPG?auto=webp&crop=2399,1350,x0,y122&format=pjpg&width=1200" ,
+      "publishedAt" : "2023-06-26T11:42:04Z" ,
+      "content" : "Powerful storms battered states across the country Sunday, leaving hundreds of thousands of people, particularly in the mid-South, without power.\r\nAccording to PowerOutage.US, over 113,000 homes and … [+2438 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : "the-wall-street-journal" ,
+        "name" : "The Wall Street Journal"
+      } ,
+      "author" : "Angus Loten, Belle Lin" ,
+      "title" : "Databricks Strikes $1.3 Billion Deal for Generative AI Startup MosaicML - WSJ - The Wall Street Journal" ,
+      "description" : "The deal aims at connecting businesses’ data with services to help them build their own, cheaper language models, Databricks CEO says" ,
+      "url" : "https://www.wsj.com/articles/databricks-strikes-1-3-billion-deal-for-generative-ai-startup-mosaicml-fdcefc06" ,
+      "urlToImage" : "https://images.wsj.net/im-806103/social" ,
+      "publishedAt" : "2023-06-26T11:40:00Z" ,
+      "content" : null
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "AOL"
+      } ,
+      "author" : "JENNIFER O'MAHONY" ,
+      "title" : "H&M workers strike for higher pay across Spain, shutting down stores - AOL" ,
+      "description" : "More than 4,000 Spanish employees at the Swedish multinational's brands including H&M, Other Stories and Cos are seeking pay rises in line with the higher..." ,
+      "url" : "https://www.aol.com/news/h-m-workers-strike-higher-113930522.html" ,
+      "urlToImage" : "https://s.yimg.com/ny/api/res/1.2/GgLHrHxvJeYzoyM3NFSy7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/aol_associated_press_484/afc9b0dc6ef39f7a19498e4dc2ca397c" ,
+      "publishedAt" : "2023-06-26T11:39:30Z" ,
+      "content" : "MADRID (AP) Hundreds of retail workers on Monday walked off the job across Spain in a new round of strikes against the fashion giant H&amp;M Group, extending a series of store closures in the middle … [+2315 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : null ,
+        "name" : "CoinDesk"
+      } ,
+      "author" : "Shaurya Malwa" ,
+      "title" : "Bitcoin Futures Attract Biggest Bets Since Terra's Collapse - CoinDesk" ,
+      "description" : "Open interest has surged to $11 billion to its highest level in over a year." ,
+      "url" : "https://www.coindesk.com/markets/2023/06/26/bitcoin-futures-attract-biggest-bets-since-terras-collapse/" ,
+      "urlToImage" : "https://www.coindesk.com/resizer/rM4I0S-Xo3WD4ZoqKHG9_t7Pg54=/1200x628/center/middle/cloudfront-us-east-1.images.arcpublishing.com/coindesk/W5QXFXFPOREABJELKQYZY3XYNI.jpeg" ,
+      "publishedAt" : "2023-06-26T11:38:00Z" ,
+      "content" : "Bitcoin (BTC) futures markets are seeing the largest money flows in over a year as traders likely bet on price movements amid a flurry of crypto exchange-traded fund (ETF) filings.\r\nOpen interest, or… [+1513 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : "usa-today" ,
+        "name" : "USA Today"
+      } ,
+      "author" : "Mike Snider" ,
+      "title" : "Honda Odyssey, Pilot, Passport among 1.2 million vehicles recalled. Check car recalls here. - USA TODAY" ,
+      "description" : "Nearly 1.2 million Honda vehicles are being recalled for a rear-view camera issue. Volkswagen, Tesla, Toyota and Mazda also issued recalls last week" ,
+      "url" : "https://www.usatoday.com/story/money/cars/2023/06/26/honda-civic-recall-toyota-camry/70353489007/" ,
+      "urlToImage" : "https://www.usatoday.com/gcdn/presto/2023/06/24/USAT/8a5203d2-a2c7-49bb-a009-5d38aa24cfb4-AP_Honda_Recall.jpeg?crop=3385,1905,x0,y172&width=3200&height=1801&format=pjpg&auto=webp" ,
+      "publishedAt" : "2023-06-26T11:15:00Z" ,
+      "content" : "The U.S. National Highway Traffic Safety Administration issued multiple recalls last week, including nearly 1.2 million Honda Odyssey, Pilot, Passport vehicles for a rear-view camera issue that could… [+5826 chars]"
+    } ,
+    {
+      "source" : {
+        "id" : "bloomberg" ,
+        "name" : "Bloomberg"
+      } ,
+      "author" : null ,
+      "title" : "Goldman Taps Solomon Ally Montag for Board Amid Disquiet in Ranks - Bloomberg" ,
+      "description" : null ,
+      "url" : "https://www.bloomberg.com/news/articles/2023-06-26/goldman-taps-tom-montag-for-board-amid-disquiet-in-bank-s-ranks" ,
+      "urlToImage" : null ,
+      "publishedAt" : "2023-06-26T11:05:03Z" ,
+      "content" : "To continue, please click the box below to let us know you're not a robot."
+    }
+  ]
+}
