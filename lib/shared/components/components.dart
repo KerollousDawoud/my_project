@@ -4,6 +4,7 @@ import 'package:conditional_builder_rec/conditional_builder_rec.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/basic.dart';
 import 'package:my_project/layout/news_app/cubit/cubit.dart';
+import 'package:my_project/modules/web_view/web_view_screen.dart';
 import 'package:my_project/shared/cubit/cubit.dart';
 
 Widget defaultButton({
@@ -47,8 +48,7 @@ Widget defaultFormField({
   bool obscureText = true,
   Function()? onTap,
   bool isClickAble = true,
-}) =>
-    TextFormField(
+}) => TextFormField(
       controller: controller,
       keyboardType: type,
       onFieldSubmitted: onSubmit,
@@ -144,8 +144,7 @@ Widget buildTaskItem(Map model, context) => Dismissible(
 
 Widget tasksBuilder({
   required List<Map> tasks,
-}) =>
-    ConditionalBuilderRec(
+}) => ConditionalBuilderRec(
       condition: tasks.length > 0,
       builder: (context) => ListView.separated(
           itemBuilder: (context, index) {
@@ -177,85 +176,91 @@ Widget tasksBuilder({
     );
 
 Widget myDivider() => Padding(
-  padding: const EdgeInsetsDirectional.only(
-    start: 15,
-  ),
-  child: Container(
-    width: double.infinity,
-    height: 1,
-    color: Colors.grey,
-  ),
-);
+      padding: const EdgeInsetsDirectional.only(
+        start: 15,
+      ),
+      child: Container(
+        width: double.infinity,
+        height: 1,
+        color: Colors.grey,
+      ),
+    );
 
-Widget buildArticlItem(artical, context) => Padding(
-      padding: const EdgeInsets.all(20.0),
-      child: Row(
-        children: [
-          Container(
-            width: 120,
-            height: 120,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                image: DecorationImage(
-                  image: NetworkImage(
-                      '${artical['urlToImage']}'),
-                  fit: BoxFit.cover,
-                )),
-          ),
-          SizedBox(
-            width: 20,
-          ),
-          Expanded(
-            child: Container(
-              width: double.infinity,
+Widget buildArticlItem(artical, context) => InkWell(
+      onTap: () {
+        navigateTo(context, WebViewScreen(artical['url']));
+      },
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Row(
+          children: [
+            Container(
+              width: 120,
               height: 120,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Expanded(
-                    child: Text(
-                      '${artical['title']}',
-                      style: NewsCubit.get(context).isDark?TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white
-                      ):TextStyle(fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.black,),
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                    image: NetworkImage('${artical['urlToImage']}'),
+                    fit: BoxFit.cover,
+                  )),
+            ),
+            SizedBox(
+              width: 20,
+            ),
+            Expanded(
+              child: Container(
+                width: double.infinity,
+                height: 120,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        '${artical['title']}',
+                        style: NewsCubit.get(context).isDark
+                            ? TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white)
+                            : TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.black,
+                              ),
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                  Text(
-                    '${artical['publishedAt']}',
-                    style: TextStyle(
-                      color: Colors.grey,
+                    Text(
+                      '${artical['publishedAt']}',
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
 
 Widget articleBuilder(list, context) => ConditionalBuilderRec(
-  condition: list.length > 0,
-  builder: (context) =>
-      ListView.separated(
+      condition: list.length > 0,
+      builder: (context) => ListView.separated(
           physics: BouncingScrollPhysics(),
-          itemBuilder: (context ,index) => buildArticlItem(list[index], context),
-          separatorBuilder: (context , index) => myDivider(),
-          itemCount:20),
-  fallback: (context) => Center(child: CircularProgressIndicator()),
-);
+          itemBuilder: (context, index) =>
+              buildArticlItem(list[index], context),
+          separatorBuilder: (context, index) => myDivider(),
+          itemCount: 20),
+      fallback: (context) => Center(child: CircularProgressIndicator()),
+    );
 
-void navigateTo (context , Widget) => Navigator.push(
-  context,
-  MaterialPageRoute(
-    builder: (context) => Widget,
-  ),
-);
-
+void navigateTo(context, Widget) => Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => Widget,
+      ),
+    );
