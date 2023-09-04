@@ -13,27 +13,20 @@ import 'package:sqflite/sqflite.dart';
 import '../../shared/cubit/cubit.dart';
 
 class todoHomeLayout extends StatelessWidget {
-
   var scaffoldKey = GlobalKey<ScaffoldState>();
   var formKey = GlobalKey<FormState>();
-
-
-
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (BuildContext context) => AppCubit()..createDatabase(),
       child: BlocConsumer<AppCubit, AppStates>(
-        listener: (BuildContext context , AppStates state)
-        {
-          if(state is AppInsertDatabaseState)
-          {
+        listener: (BuildContext context, AppStates state) {
+          if (state is AppInsertDatabaseState) {
             Navigator.pop(context);
           }
         },
-        builder: (BuildContext context , AppStates state)
-        {
+        builder: (BuildContext context, AppStates state) {
           AppCubit cubit = AppCubit.get(context);
           return Scaffold(
             key: scaffoldKey,
@@ -52,112 +45,111 @@ class todoHomeLayout extends StatelessWidget {
               builder: (context) => cubit.screen[cubit.currentIndex],
               fallback: (context) => Center(child: CircularProgressIndicator()),
             ),
-              floatingActionButton: FloatingActionButton(
+            floatingActionButton: FloatingActionButton(
               onPressed: () {
                 if (cubit.isBottomSheetShown) {
                   if (formKey.currentState!.validate()) {
                     cubit.insertToDatabase(
                         title: cubit.titleController.text,
                         time: cubit.timeController.text,
-                        date: cubit.dateController.text
-                    );
+                        date: cubit.dateController.text);
                   }
-                }
-                else {
+                } else {
                   scaffoldKey.currentState!
                       .showBottomSheet(
                         (context) => Container(
-                      color: Colors.grey[100],
-                      child: Padding(
-                        padding: EdgeInsets.all(20.0),
-                        child: Form(
-                          key: formKey,
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              defaultFormField(
-                                  controller: cubit.titleController,
-                                  type: TextInputType.text,
-                                  validate: (value) {
-                                    if (value!.isEmpty) {
-                                      return 'title must not be empty';
-                                    }
-                                  },
-                                  isPassword: false,
-                                  label: 'tast title',
-                                  prefix: Icons.title),
-                              SizedBox(
-                                height: 20,
+                          color: Colors.grey[100],
+                          child: Padding(
+                            padding: EdgeInsets.all(20.0),
+                            child: Form(
+                              key: formKey,
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  defaultFormField(
+                                    controller: cubit.titleController,
+                                    type: TextInputType.text,
+                                    validate: (value) {
+                                      if (value!.isEmpty) {
+                                        return 'title must not be empty';
+                                      }
+                                    },
+                                    isPassword: false,
+                                    label: 'tast title',
+                                    prefix: Icons.title,
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  defaultFormField(
+                                      controller: cubit.timeController,
+                                      type: TextInputType.datetime,
+                                      onTap: () {
+                                        showTimePicker(
+                                          context: context,
+                                          initialTime: TimeOfDay.now(),
+                                        ).then((value) {
+                                          cubit.timeController.text =
+                                              value!.format(context).toString();
+                                          print(value.format(context));
+                                        });
+                                      },
+                                      validate: (value) {
+                                        if (value!.isEmpty) {
+                                          return 'time must not be empty';
+                                        }
+                                        return null;
+                                      },
+                                      label: 'tast time',
+                                      isPassword: false,
+                                      prefix: Icons.watch_later_outlined,
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  defaultFormField(
+                                      controller: cubit.dateController,
+                                      type: TextInputType.datetime,
+                                      onTap: () {
+                                        showDatePicker(
+                                                context: context,
+                                                initialDate: DateTime.now(),
+                                                firstDate: DateTime.now(),
+                                                lastDate: DateTime.parse(
+                                                    '2023-07-01'))
+                                            .then((value) {
+                                          print(DateFormat.yMMMd()
+                                              .format(value!));
+                                          cubit.dateController.text =
+                                              DateFormat.yMMMd().format(value);
+                                        });
+                                      },
+                                      validate: (value) {
+                                        if (value!.isEmpty) {
+                                          return 'date must not be empty';
+                                        }
+                                        return null;
+                                      },
+                                      label: 'tast date',
+                                      isPassword: false,
+                                      prefix: Icons.calendar_month,
+                                      ),
+                                ],
                               ),
-                              defaultFormField(
-                                  controller: cubit.timeController,
-                                  type: TextInputType.datetime,
-                                  onTap: () {
-                                    showTimePicker(
-                                      context: context,
-                                      initialTime: TimeOfDay.now(),
-                                    ).then((value) {
-                                      cubit.timeController.text =
-                                          value!.format(context).toString();
-                                      print(value.format(context));
-                                    });
-                                  },
-                                  validate: (value) {
-                                    if (value!.isEmpty) {
-                                      return 'time must not be empty';
-                                    }
-                                    return null;
-                                  },
-                                  label: 'tast time',
-                                  isPassword: false,
-                                  prefix: Icons.watch_later_outlined),
-                              SizedBox(
-                                height: 20,
-                              ),
-                              defaultFormField(
-                                  controller: cubit.dateController,
-                                  type: TextInputType.datetime,
-                                  onTap: () {
-                                    showDatePicker(
-                                        context: context,
-                                        initialDate: DateTime.now(),
-                                        firstDate: DateTime.now(),
-                                        lastDate:
-                                        DateTime.parse('2023-07-01'))
-                                        .then((value) {
-                                      print(DateFormat.yMMMd().format(value!));
-                                      cubit.dateController.text =
-                                          DateFormat.yMMMd().format(value);
-                                    });
-                                  },
-                                  validate: (value) {
-                                    if (value!.isEmpty) {
-                                      return 'date must not be empty';
-                                    }
-                                    return null;
-                                  },
-                                  label: 'tast date',
-                                  isPassword: false,
-                                  prefix: Icons.calendar_month),
-                            ],
+                            ),
                           ),
                         ),
-                      ),
-                    ),
-                    elevation: 15,
-                  )
+                        elevation: 15,
+                      )
                       .closed
                       .then((value) {
-                        cubit.changeBottomSheetState(isShow: false, icon: Icons.edit);
+                    cubit.changeBottomSheetState(
+                        isShow: false, icon: Icons.edit);
                   });
-                  cubit.changeBottomSheetState(
-                      isShow: true,
-                      icon: Icons.add);
+                  cubit.changeBottomSheetState(isShow: true, icon: Icons.add);
                 }
               },
-              child: Icon(
-                  cubit.fabIcon
-              ),
+              child: Icon(cubit.fabIcon),
             ),
             bottomNavigationBar: BottomNavigationBar(
               onTap: (index) {
@@ -193,9 +185,4 @@ class todoHomeLayout extends StatelessWidget {
       ),
     );
   }
-
-
-
 }
-
-

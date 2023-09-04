@@ -4,8 +4,9 @@ import 'package:conditional_builder_rec/conditional_builder_rec.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/basic.dart';
 import 'package:my_project/layout/news_app/cubit/cubit.dart';
-import 'package:my_project/modules/web_view/web_view_screen.dart';
 import 'package:my_project/shared/cubit/cubit.dart';
+
+import '../../modules/news_app/web_view/web_view_screen.dart';
 
 Widget defaultButton({
   double width = double.infinity,
@@ -48,6 +49,7 @@ Widget defaultFormField({
   bool obscureText = true,
   Function()? onTap,
   bool isClickAble = true,
+  TextStyle? darkModeTextStyle,
 }) => TextFormField(
       controller: controller,
       keyboardType: type,
@@ -188,7 +190,7 @@ Widget myDivider() => Padding(
 
 Widget buildArticlItem(artical, context) => InkWell(
       onTap: () {
-        navigateTo(context, WebViewScreen(artical['url']));
+        navigateTo(context, WebViewScreen(initialUrl: artical['url']));
       },
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -247,7 +249,7 @@ Widget buildArticlItem(artical, context) => InkWell(
       ),
     );
 
-Widget articleBuilder(list, context) => ConditionalBuilderRec(
+Widget articleBuilder(list, context, {isSearch = false}) => ConditionalBuilderRec(
       condition: list.length > 0,
       builder: (context) => ListView.separated(
           physics: BouncingScrollPhysics(),
@@ -255,7 +257,7 @@ Widget articleBuilder(list, context) => ConditionalBuilderRec(
               buildArticlItem(list[index], context),
           separatorBuilder: (context, index) => myDivider(),
           itemCount: 20),
-      fallback: (context) => Center(child: CircularProgressIndicator()),
+      fallback: (context) =>isSearch ? Container() : Center(child: CircularProgressIndicator()),
     );
 
 void navigateTo(context, Widget) => Navigator.push(

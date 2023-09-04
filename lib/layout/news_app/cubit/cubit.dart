@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_project/layout/news_app/cubit/states.dart';
-import 'package:my_project/modules/business/business_screen.dart';
-import 'package:my_project/modules/science/science_screen.dart';
-import 'package:my_project/modules/sports/sports_screen.dart';
+import 'package:my_project/modules/news_app/business/business_screen.dart';
+import 'package:my_project/modules/news_app/science/science_screen.dart';
+import 'package:my_project/modules/news_app/sports/sports_screen.dart';
 import 'package:my_project/shared/network/local/cache_helper.dart';
 import 'package:my_project/shared/network/remote/dio_helper.dart';
 

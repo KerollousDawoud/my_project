@@ -7,18 +7,20 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:my_project/layout/news_app/cubit/cubit.dart';
 import 'package:my_project/layout/news_app/news_layout.dart';
 import 'package:my_project/layout/todo_app/todo_layout.dart';
+import 'package:my_project/modules/shop_app/on_boarding/on_boarding_screen.dart';
 import 'package:my_project/shared/cubit/cubit.dart';
 import 'package:my_project/shared/cubit/state.dart';
 import 'package:my_project/shared/network/local/cache_helper.dart';
 import 'package:my_project/shared/network/remote/dio_helper.dart';
+import 'package:my_project/shared/styles/themes.dart';
 import 'package:provider/provider.dart';
 import 'layout/news_app/cubit/states.dart';
-import 'modules/login/login_screen.dart';
-import 'modules/messanger/messenger_screen.dart';
-import 'modules/counter/counter_screen.dart';
-import 'modules/users/users_screen.dart';
-import 'modules/bmi_result/bmi_result_screen.dart';
-import 'modules/home/home_screen.dart';
+import 'modules/basics/login/login_screen.dart';
+import 'modules/basics/messanger/messenger_screen.dart';
+import 'modules/counter_app/counter/counter_screen.dart';
+import 'modules/basics/users/users_screen.dart';
+import 'modules/bmi_app/bmi/bmi_result/bmi_result_screen.dart';
+import 'modules/basics/home/home_screen.dart';
 import 'package:sqflite/sqflite.dart';
 import 'shared/bloc_observer.dart';
 import 'package:dio/dio.dart';
@@ -32,9 +34,9 @@ void main() async
   DioHelper.init();
   await CacheHelper.init();
 
-  bool? isDark = CacheHelper.getBoolean(key: 'isDark');
+  bool? isDark = CacheHelper.getBoolean(key: 'isDark') ?? false ;
 
-  runApp(MyApp(isDark!));
+  runApp(MyApp(isDark!)); // ignore: unnecessary_non_null_assertion
 }
 
 class MyApp extends StatelessWidget {
@@ -57,77 +59,11 @@ class MyApp extends StatelessWidget {
         builder: (BuildContext context, state) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
-            theme: ThemeData(
-              primarySwatch: Colors.deepOrange,
-              scaffoldBackgroundColor: Colors.white,
-              appBarTheme: AppBarTheme(
-                  systemOverlayStyle: SystemUiOverlayStyle(
-                    statusBarIconBrightness: Brightness.dark,
-                    statusBarColor: Colors.white,
-                  ),
-                  backgroundColor: Colors.white,
-                  elevation: 0,
-                  titleTextStyle: TextStyle(
-                      color: Colors.black,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold),
-                  iconTheme: IconThemeData(
-                    color: Colors.black,
-                  )),
-              floatingActionButtonTheme: FloatingActionButtonThemeData(
-                backgroundColor: Colors.deepOrange,
-              ),
-              bottomNavigationBarTheme: BottomNavigationBarThemeData(
-                type: BottomNavigationBarType.fixed,
-                selectedItemColor: Colors.deepOrange,
-                elevation: 30,
-
-                unselectedItemColor: Colors.black,
-                backgroundColor: Colors.white,
-              ),
-              textTheme: TextTheme(
-                bodyText1: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black,
-                ),
-              ),
-            ),
-            darkTheme: ThemeData(
-                primarySwatch: Colors.deepOrange,
-                scaffoldBackgroundColor: HexColor('333739'),
-                appBarTheme: AppBarTheme(
-                    systemOverlayStyle: SystemUiOverlayStyle(
-                      statusBarIconBrightness: Brightness.dark,
-                      statusBarColor: HexColor('333739'),
-                    ),
-                    backgroundColor: HexColor('333739'),
-                    elevation: 0,
-                    titleTextStyle: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold),
-                    iconTheme: IconThemeData(
-                      color: Colors.white,
-                    )),
-                floatingActionButtonTheme: FloatingActionButtonThemeData(
-                  backgroundColor: Colors.deepOrange,
-                ),
-                bottomNavigationBarTheme: BottomNavigationBarThemeData(
-                  type: BottomNavigationBarType.fixed,
-                  selectedItemColor: Colors.deepOrange,
-                  elevation: 30,
-                  unselectedItemColor: Colors.grey,
-                  backgroundColor: HexColor('333739'),
-                ),
-                textTheme: TextTheme(
-                    bodyText1: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white))),
+            theme: lightTheme,
+            darkTheme: darkTheme,
             themeMode:
             NewsCubit.get(context).isDark ? ThemeMode.dark : ThemeMode.light,
-            home: NewsLayout(),
+            home: OnBoardingScreen(),
           );
         },
       ),

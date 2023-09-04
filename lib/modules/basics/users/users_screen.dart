@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import '../../models/user/user_model.dart';
+import '../../../models/user/user_model.dart';
 
 class usersScreen extends StatelessWidget 
 {

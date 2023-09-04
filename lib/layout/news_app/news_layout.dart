@@ -5,11 +5,12 @@ import  'package:flutter/widgets.dart';
 import  'package:flutter_bloc/flutter_bloc.dart';
 import  'package:my_project/layout/news_app/cubit/cubit.dart';
 import  'package:my_project/layout/news_app/cubit/states.dart';
-import 'package:my_project/modules/search/search_screen.dart';
 import 'package:my_project/shared/components/components.dart';
 import 'package:my_project/shared/cubit/cubit.dart';
 import  'package:my_project/shared/network/remote/dio_helper.dart';
 import 'package:dio/dio.dart';
+
+import '../../modules/news_app/search/search_screen.dart';
 
 class NewsLayout extends StatelessWidget
 {
